@@ -1,5 +1,5 @@
 var dropMenu = document.getElementById("drop-menu");
-dropMenu.addEventListener("change", carregaPrograms);
+dropMenu.addEventListener("change", carregaProgramadoras);
 
 window.onload = carregaMenu();
 
@@ -18,16 +18,16 @@ function carregaMenu(){
   }
 };
 
-function carregaPrograms(){
+function carregaProgramadoras(){
   var sede = dropMenu.value;
-  var exibePrograms = document.getElementById("exibePrograms");
-  exibePrograms.innerHTML = "";
+  var listaProgramadoras = document.getElementById("exibe-programadoras");
+  listaProgramadoras.innerHTML = "";
   for(turma in data[sede]){
     for(i in data[sede][turma]["students"]){
       (data[sede][turma]["students"][i]["photo"]);
       var img = document.createElement("img");
       img.src = data[sede][turma]["students"][i]["photo"];
-      exibePrograms.appendChild(img);
+      listaProgramadoras.appendChild(img);
     }
   }
 };

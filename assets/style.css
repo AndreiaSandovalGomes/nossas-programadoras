@@ -2,14 +2,14 @@
   box-sizing: border-box;
 }
 
-#exibePrograms{
+#exibe-programadoras{
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: space-evenly;
 }
 
-#exibePrograms img {
+#exibe-programadoras img {
   margin: 5px;
   padding: 5px;
 
